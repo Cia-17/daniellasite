@@ -1,0 +1,390 @@
+:root{
+    --branding-color: #6c1616;
+    --secondary-color: #f9f7fe;
+    --heading-font-family: "Playfair Diaplay", serif;
+    --default-font-family: "Poppins", serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    color: white;
+    font-family: var(--heading-font-family);
+    font-weight: bold;
+}
+
+body{
+    font-family: var(--default-font-family);
+}
+
+h1{
+    font-size: 96px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h2{
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+.banner{
+    background-color: var(--branding-color);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: var(--secondary-color);
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+}
+
+nav a:hover{
+    color: var(--branding-color);
+}
+
+.search-container{
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 0 0;
+}
+
+.search{
+    flex: 1;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 2px 8px 4px;
+    margin-right: 10px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+.search-btn{
+    background-color: var(--branding-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.home-subbanner{
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.home-perfumes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+}
+
+.perfume-item{
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.perfume-image img{
+    max-width: 100%;
+    height: auto;
+}
+
+.home-books{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+}
+
+.book-item{
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.book-image img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+footer{
+    background-color: var(--branding-color);
+    color: white;
+    padding: 16px 0;
+
+}
+
+footer .footer-socials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-left{
+    display: flex;
+    gap: 20px;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+footer .footer-right{
+    text-align: right;
+    padding-right: 30px;
+    font-size: 16px;
+    display: flex;
+    justify-content: right;
+    
+}
+
+.footer-right p{
+    margin: 0px;
+    padding-left: 8px;
+}
+
+.footer-right .whatsapplink{
+    border-right: 1px solid white;
+    padding-right: 10px;
+}
+
+footer small{
+    display: block;
+    text-align: center;
+    margin-top: 20px;  
+}
+
+
+
+/* about us*/
+
+.aboutus-content{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    margin: 50px 30px 30px 30px;
+}
+
+.aboutus-text{
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.aboutus-img img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+
+.reviews h2{
+    text-align: center;
+    margin-bottom: 20px;
+    background: var(--secondary-color);
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.review-person{
+    font-weight: bold;
+    font-size: 18px;
+} 
+
+.allreviews{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    margin: 30px;
+}
+
+.review-item{
+    flex: 1 1 calc(33.333% - 20px);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 1.5;
+    background-color: var(--secondary-color);
+}
+
+.review-item:hover{
+    scale: 1.05;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+/* Books */
+
+.books-content{
+    margin: 50px 30px 30px 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../style/booksimg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    color: white;
+}
+
+.books-text{
+    padding: 60px 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.books-text h2{
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.books-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/* perfumes */
+
+.perfume-content{
+    margin: 50px 30px 30px 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../style/booksimg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    color: white;
+}
+
+.perfume-text{
+    padding: 60px 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.perfume-text h2{
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.perfume-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/* responsive design */
+@media (max-width: 768px) {
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navinfo{
+        margin-top: 14px;
+    }
+
+
+    h1{
+        font-size: 48px;
+        line-height: 1.5;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+    .search-container{
+        display: flex;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        justify-content: left;
+    }
+
+    .search{
+        flex: 1;
+        font-size: 14px;
+    }
+
+
+    .aboutus-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .allreviews{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-item{
+        flex: 1 1 100%;
+    }
+
+    .book-item, .perfume-item{
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .books-content, .perfume-content{
+        min-height: 300px;
+    }
+
+    .books-text h2, .perfume-text h2{
+        font-size: 60px;
+    }
+
+    .books-text p, .perfume-text p{
+        font-size: 16px;
+    }
+
+    footer .footer-left, footer .footer-right{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
